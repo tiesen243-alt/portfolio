@@ -14,10 +14,6 @@ const config = {
   // oxlint-disable-next-line require-await
   rewrites: async () => [
     {
-      source: '/assets/:path*',
-      destination: 'https://tiesen.id.vn/assets/:path*',
-    },
-    {
       source: '/:path*.md',
       destination: '/llms.mdx/:path*.md',
     },
