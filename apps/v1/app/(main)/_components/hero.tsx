@@ -8,7 +8,7 @@ import { Typography } from '@yuki/ui/components/typography'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import Logotype from '@/assets/logotype.png'
+import Logotype from '@/public/assets/logotype.png'
 
 export function HeroSection() {
   return (

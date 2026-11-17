@@ -105,44 +105,6 @@ export default function Page(_: PageProps<'/'>) {
         />
       </TerminalContent>
 
-      <TerminalContent
-        id='key-projects'
-        command='ls -la ~/portfolio/key-projects'
-      >
-        <h2 className='sr-only'>Key projects section</h2>
-
-        <Tree
-          node={{
-            content: '.',
-            children: data.projects.map((project) => ({
-              icon: icons.FolderKanbanIcon,
-              content: (
-                <>
-                  <Typography className='font-bold text-primary'>
-                    {project.title}
-                  </Typography>
-                  <Typography>{project.description}</Typography>
-                  <Typography>
-                    Repository:{' '}
-                    <HoverLink href={`https://${project.repository}`}>
-                      {project.repository}
-                    </HoverLink>
-                  </Typography>
-                  {project.liveDemo && (
-                    <Typography>
-                      Live Demo:{' '}
-                      <HoverLink href={`https://${project.liveDemo}`}>
-                        {project.liveDemo}
-                      </HoverLink>
-                    </Typography>
-                  )}
-                </>
-              ),
-            })),
-          }}
-        />
-      </TerminalContent>
-
       <TerminalContent id='education' command='ls -la ~/portfolio/education'>
         <h2 className='sr-only'>Education section</h2>
 

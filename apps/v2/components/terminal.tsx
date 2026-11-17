@@ -3,6 +3,7 @@ import { Typography } from '@yuki/ui/components/typography'
 import { cn } from '@yuki/ui/lib/utils'
 
 import { NavigationDropdown } from '@/components/navigation-dropdown'
+import { Copyright } from '@/components/terminal.client'
 import { ToggleTheme } from '@/components/toggle-theme'
 import data from '@/public/assets/data.json' with { type: 'json' }
 
@@ -27,6 +28,7 @@ export function Terminal({
         </ul>
 
         <ToggleTheme />
+
         <NavigationDropdown />
       </nav>
 
@@ -35,14 +37,7 @@ export function Terminal({
       <TerminalContent command='echo $COPYRIGHT'>
         <h2 className='sr-only'>Copyright section</h2>
 
-        <Typography>
-          ©
-          {
-            // oxlint-disable-next-line react/purity
-            new Date().getFullYear()
-          }{' '}
-          {data.handle}. All rights reserved.
-        </Typography>
+        <Copyright handle={data.handle} />
       </TerminalContent>
 
       <TerminalContent command='_' />

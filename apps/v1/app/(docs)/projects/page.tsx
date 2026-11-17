@@ -10,10 +10,10 @@ import { Typography } from '@yuki/ui/components/typography'
 import Link from 'next/link'
 import { useMemo } from 'react'
 
-import data from '@/data' with { type: 'json' }
 import { createMetadata } from '@/lib/metadata'
 import { source } from '@/lib/source'
 import { formatDate } from '@/lib/utils'
+import data from '@/public/assets/data.json' with { type: 'json' }
 
 const TITLE = 'Projects'
 const DESCRIPTION =

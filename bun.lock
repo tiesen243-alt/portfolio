@@ -26,7 +26,7 @@
         "zod": "catalog:prod",
       },
       "devDependencies": {
-        "@tailwindcss/postcss": "catalog:tailwind",
+        "@tailwindcss/turbopack": "catalog:tailwind",
         "@types/mdx": "catalog:dev",
         "@types/node": "catalog:dev",
         "@types/react": "catalog:react",
@@ -51,7 +51,7 @@
         "zod": "catalog:prod",
       },
       "devDependencies": {
-        "@tailwindcss/postcss": "catalog:tailwind",
+        "@tailwindcss/turbopack": "catalog:tailwind",
         "@types/mdx": "catalog:dev",
         "@types/node": "catalog:dev",
         "@types/react": "catalog:react",
@@ -82,7 +82,6 @@
         "class-variance-authority": "^0.7.1",
         "cn": "^0.5.2",
         "lucide-react": "^1.74.0",
-        "tw-animate-css": "^1.4.0",
       },
       "devDependencies": {
         "@types/react": "catalog:react",
@@ -90,6 +89,7 @@
         "@yuki/tsconfig": "workspace:*",
         "tailwindcss": "catalog:tailwind",
         "tsdown": "catalog:dev",
+        "tw-animate-css": "^1.4.0",
         "typescript": "catalog:dev",
       },
       "peerDependencies": {
@@ -98,6 +98,9 @@
       },
     },
   },
+  "trustedDependencies": [
+    "sharp",
+  ],
   "catalogs": {
     "dev": {
       "@types/mdx": "^2.0.14",
@@ -124,8 +127,7 @@
       "react-dom": "^19.3.1",
     },
     "tailwind": {
-      "@tailwindcss/postcss": "^4.3.5",
-      "@tailwindcss/vite": "^4.2.2",
+      "@tailwindcss/turbopack": "^4.3.3",
       "tailwindcss": "^4.3.5",
     },
   },
@@ -462,7 +464,7 @@
 
     "@tailwindcss/oxide-win32-x64-msvc": ["@tailwindcss/oxide-win32-x64-msvc@4.3.5", "", { "os": "win32", "cpu": "x64" }, "sha512-XiKFfIy1RWe7qK4WqByxNW7Oz1/nkOy8o/BWhHminyV1PmpUd8Eedj5v2A8h2kpqeVlz6xRnwk9Fr/ZXNLcZfg=="],
 
-    "@tailwindcss/postcss": ["@tailwindcss/postcss@4.3.5", "", { "dependencies": { "@alloc/quick-lru": "^5.2.0", "@tailwindcss/node": "4.3.5", "@tailwindcss/oxide": "4.3.5", "postcss": "^8.5.25", "tailwindcss": "4.3.5" } }, "sha512-FAV37Tlx9wBiT/hkfgVD0Q6CWsP2oUX3lf28nrfjW8+ksILjnpuFulUqWDfNR4/ZiEHHDRBX8DUTzD1Rys687A=="],
+    "@tailwindcss/turbopack": ["@tailwindcss/turbopack@4.3.5", "", { "dependencies": { "@alloc/quick-lru": "^5.2.0", "@tailwindcss/node": "4.3.5", "@tailwindcss/oxide": "4.3.5", "tailwindcss": "4.3.5" } }, "sha512-0f0rOTyz4yGtPzpSiIP3ppAaYtMnQbGnEsHPGK4Yy8wNbE4xZWlNPjWtD6oyXvQZTg2N0XF4BZEhfsgvJe889g=="],
 
     "@turbo/darwin-64": ["@turbo/darwin-64@2.11.11", "", { "os": "darwin", "cpu": "x64" }, "sha512-HMMeUIEAsmyIbSYn1ySvF/4gGMa0joiTMq4dQDuloIAnOpbtFT3JEiVsYnASdTWDXvplbRbZlqjU1EBeSR9G1A=="],
 
@@ -1067,8 +1069,6 @@
     "@tailwindcss/oxide-wasm32-wasi/@tybys/wasm-util": ["@tybys/wasm-util@0.10.4", "", { "dependencies": { "tslib": "^2.4.0" }, "bundled": true }, "sha512-W3c4gRigFS0T/Ma4qIYF3GDAc5AQdHb1yL5znJT1Zv1YaD9Kitx656wBjvr19qbiosmZT8lWDM5BEMynUqX65A=="],
 
     "@tailwindcss/oxide-wasm32-wasi/tslib": ["tslib@2.8.1", "", { "bundled": true }, "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w=="],
-
-    "@tailwindcss/postcss/postcss": ["postcss@8.5.32", "", { "dependencies": { "nanoid": "^3.3.20", "picocolors": "^1.1.1", "source-map-js": "^1.2.2" } }, "sha512-LJlKCCAUFKOuZxipUdYw1NzIITEsPcgyOG9LkvRJvuKj/bRzbuRY0ARXvL0pWGpsZvn8jku+LMep2eU0seHp8g=="],
 
     "parse-entities/@types/unist": ["@types/unist@2.0.11", "", {}, "sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA=="],
   }

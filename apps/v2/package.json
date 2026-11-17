@@ -21,7 +21,7 @@
     "zod": "catalog:prod"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "catalog:tailwind",
+    "@tailwindcss/turbopack": "catalog:tailwind",
     "@types/mdx": "catalog:dev",
     "@types/node": "catalog:dev",
     "@types/react": "catalog:react",
@@ -30,5 +30,13 @@
     "@yuki/tsconfig": "workspace:*",
     "tailwindcss": "catalog:tailwind",
     "typescript": "catalog:dev"
-  }
+  },
+  "ignoreScripts": [
+    "sharp",
+    "unrs-resolver"
+  ],
+  "trustedDependencies": [
+    "sharp",
+    "unrs-resolver"
+  ]
 }

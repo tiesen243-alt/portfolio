@@ -2,7 +2,7 @@ import { Badge } from '@yuki/ui/components/badge'
 import * as icons from '@yuki/ui/components/icons'
 import { Typography } from '@yuki/ui/components/typography'
 
-import data from '@/data' with { type: 'json' }
+import data from '@/public/assets/data.json' with { type: 'json' }
 
 export function SkillSection() {
   return (

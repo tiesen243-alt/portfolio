@@ -53,31 +53,6 @@
       ]
     }
   ],
-  "projects": [
-    {
-      "title": "Yukinu",
-      "description": "An open-source e-commerce platform that enables customers to discover, compare, and purchase products from multiple sellers in one place, with fast browsing, secure checkout, and a smooth user experience.",
-      "repository": "github.com/tiesen243/yukinu",
-      "liveDemo": "yukinu.vercel.app"
-    },
-    {
-      "title": "Yuki UI",
-      "description": " A modern UI component library for React built on top of shadcn/ui. Beautiful, accessible, and customizable components for your next project.",
-      "repository": "github.com/tiesen243/yuki-ui",
-      "liveDemo": "ui.tiesen.id.vn"
-    },
-    {
-      "title": "Effect Tanstack Query",
-      "description": "A lightweight, type-safe bridge between Effect HTTP API clients and TanStack Query.",
-      "repository": "github.com/tiesen243/effect-tanstack-query",
-      "liveDemo": "npmx.dev/package/@tiesen/effect-tanstack-query"
-    },
-    {
-      "title": "vercel.nvim",
-      "description": "A Neovim theme inspired by Vercel's design system, providing a sleek and modern look for your Neovim editor.",
-      "repository": "github.com/tiesen243/vercel.nvim"
-    }
-  ],
   "education": [
     {
       "institution": "Industrial University of Ho Chi Minh City",

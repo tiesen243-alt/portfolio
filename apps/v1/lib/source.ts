@@ -7,7 +7,7 @@ import * as z from 'zod'
 import { docsRoute } from '@/lib/shared'
 
 const docs = defineDocs({
-  dir: '../../docs',
+  dir: '../v2/content',
   docs: {
     schema: pageSchema.extend({
       image: z.string().optional(),

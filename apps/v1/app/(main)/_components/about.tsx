@@ -1,7 +1,7 @@
 import { Typography } from '@yuki/ui/components/typography'
 import Image from 'next/image'
 
-import data from '@/data' with { type: 'json' }
+import data from '@/public/assets/data.json' with { type: 'json' }
 
 export const AboutSection: React.FC = () => (
   <section id='about' className='container grid md:grid-cols-3'>

@@ -2,8 +2,8 @@ import type { BaseLayoutProps } from '@fumadocs/base-ui/layouts/shared'
 
 import Image from 'next/image'
 
-import logotype from '@/assets/logotype.png'
 import { appName, gitConfig } from '@/lib/shared'
+import logotype from '@/public/assets/logotype.png'
 
 export function baseOptions(): BaseLayoutProps {
   return {

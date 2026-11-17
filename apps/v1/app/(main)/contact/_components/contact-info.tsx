@@ -9,7 +9,7 @@ import {
 } from '@yuki/ui/components/card'
 import { MailIcon } from '@yuki/ui/components/icons'
 
-import data from '@/data' with { type: 'json' }
+import data from '@/public/assets/data.json' with { type: 'json' }
 
 export const ContactInfo: React.FC = () => (
   <section className='flex flex-col gap-4'>

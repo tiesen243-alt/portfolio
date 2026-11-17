@@ -1,6 +1,6 @@
 import { Typography } from '@yuki/ui/components/typography'
 
-import data from '@/data' with { type: 'json' }
+import data from '@/public/assets/data.json' with { type: 'json' }
 
 export const CertificationSection: React.FC = () => (
   <section id='certification' className='container mt-6 flex flex-col'>

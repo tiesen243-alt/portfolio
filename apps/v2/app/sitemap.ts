@@ -3,8 +3,6 @@ import type { MetadataRoute } from 'next'
 import { getPages } from '@/lib/source'
 import { getBaseUrl } from '@/lib/utils'
 
-export const revalidate = false
-
 const url = (path: string): string => new URL(path, getBaseUrl()).toString()
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

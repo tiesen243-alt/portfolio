@@ -1,7 +1,5 @@
 import { docsLlms } from '@/lib/source'
 
-export const revalidate = false
-
 export async function GET(
   _req: Request,
   { params }: RouteContext<'/llms.mdx/[...slug]'>

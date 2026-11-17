@@ -5,7 +5,6 @@ import {
   EducationSection,
   ExperienceSection,
 } from '@/app/(main)/_components/resume-sections'
-import { ShowcaseSection } from '@/app/(main)/_components/showcase'
 import { SkillSection } from '@/app/(main)/_components/skill'
 import { createMetadata } from '@/lib/metadata'
 
@@ -18,7 +17,6 @@ export default function HomePage() {
       <CertificationSection />
       <ExperienceSection />
       <EducationSection />
-      <ShowcaseSection />
     </main>
   )
 }

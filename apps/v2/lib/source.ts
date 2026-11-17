@@ -11,7 +11,7 @@ import * as z from 'zod'
 import { github } from '@/lib/contants'
 import { getBaseUrl } from '@/lib/utils'
 
-const DOCS_PATH = path.resolve(process.cwd(), '../../docs')
+const DOCS_PATH = path.resolve(process.cwd(), 'content')
 
 const frontmatterSchema = z.object({
   title: z.string(),
