@@ -17,6 +17,14 @@ const config = {
       source: '/assets/:path*',
       destination: 'https://tiesen.id.vn/assets/:path*',
     },
+    {
+      source: '/:path*.md',
+      destination: '/llms.mdx/:path*.md',
+    },
+    {
+      source: '/:path*.txt',
+      destination: '/llms.mdx/:path*.txt',
+    },
   ],
 } satisfies NextConfig
 
