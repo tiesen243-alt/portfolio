@@ -52,7 +52,7 @@ export const OpenButton: React.FC<{ slugs: string[] }> = ({ slugs }) => (
 const PROVIDERS = [
   {
     label: 'Open in Github',
-    href: `https://gitlab.com/${github.username}/${github.repository}/-/${github.branch}/apps/v2/content`,
+    href: `https://gitlab.com/${github.username}/${github.repository}/-/tree/${github.branch}/apps/v2/content`,
     suffix: '.mdx',
   },
   {
