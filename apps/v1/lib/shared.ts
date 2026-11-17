@@ -1,3 +1,5 @@
+import { createGetUrl } from 'fumadocs-core/source'
+
 export const appName = 'Tiesen'
 export const appDescription =
   'Tiesen is a software engineer with a passion for building innovative solutions. With expertise in full-stack development, Tiesen has a proven track record of delivering high-quality projects on time and within budget. Tiesen is always eager to learn new technologies and stay up-to-date with industry trends, making them a valuable asset to any team.'
@@ -10,4 +12,12 @@ export const gitConfig = {
   user: 'tiesen243',
   repo: 'portfolio',
   branch: 'main',
+}
+
+const getImageUrl = createGetUrl(docsImageRoute)
+
+export function getPageImageUrl(page: { slugs: string[]; locale?: string }) {
+  const segments = [...page.slugs, 'image.png']
+
+  return { segments, url: getImageUrl(segments, page.locale) }
 }

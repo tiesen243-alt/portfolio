@@ -134,7 +134,7 @@ const uncachedGetLLMText = (
   return `# ${metadata.title}
 
 URL: ${getBaseUrl()}${url}
-Source: https://raw.githubusercontent.com/${github.username}/${github.repository}/main/docs/${url.slice(1)}.mdx
+Source: https://gitlab.com/${github.username}/${github.repository}/-/raw/${github.branch}/docs/${url.slice(1)}.mdx
 
 ${plain}`
 }

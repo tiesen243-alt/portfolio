@@ -5,6 +5,7 @@
     "": {
       "name": "portfolio",
       "devDependencies": {
+        "fumadocs-core": "catalog:fumadocs",
         "oxfmt": "^0.79.0",
         "oxlint": "^1.94.0",
         "turbo": "^2.11.11",

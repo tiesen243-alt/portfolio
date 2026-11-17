@@ -5,4 +5,5 @@ export const appDescription =
 export const github = {
   username: 'tiesen243',
   repository: 'portfolio',
+  branch: 'main',
 }

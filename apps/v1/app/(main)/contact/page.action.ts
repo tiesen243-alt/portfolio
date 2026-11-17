@@ -31,7 +31,5 @@ export async function sendEmail(opts: {
     }),
   })
 
-  console.log('Email sent:', response.ok, await response.json())
-
   return response.ok
 }

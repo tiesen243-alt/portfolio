@@ -14,8 +14,8 @@ import { notFound } from 'next/navigation'
 
 import { getMDXComponents } from '@/app/(docs)/[...slug]/_mdx'
 import { createMetadata } from '@/lib/metadata'
-import { appName, gitConfig } from '@/lib/shared'
-import { getPageImage, getPageMarkdownUrl, source } from '@/lib/source'
+import { appName, getPageImageUrl, gitConfig } from '@/lib/shared'
+import { source } from '@/lib/source'
 import { formatDate, getBaseUrl } from '@/lib/utils'
 
 export default async function Page(props: PageProps<'/[...slug]'>) {
@@ -24,7 +24,7 @@ export default async function Page(props: PageProps<'/[...slug]'>) {
   if (!page) notFound()
 
   const MDXContent = page.data.body
-  const markdownUrl = getPageMarkdownUrl(page).url
+  const markdownUrl = `${page.url}.md`
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -45,7 +45,7 @@ export default async function Page(props: PageProps<'/[...slug]'>) {
         url: `${getBaseUrl()}/icon-512.png`,
       },
     },
-    image: getPageImage(page).url,
+    image: getPageImageUrl(page).url,
   }
 
   return (
@@ -80,7 +80,7 @@ export default async function Page(props: PageProps<'/[...slug]'>) {
           <MarkdownCopyButton markdownUrl={markdownUrl} />
           <ViewOptionsPopover
             markdownUrl={markdownUrl}
-            githubUrl={`https://github.com/${gitConfig.user}/${gitConfig.repo}/blob/${gitConfig.branch}/apps/web/content/${page.path}`}
+            githubUrl={`https://gitlab.com/${gitConfig.user}/${gitConfig.repo}/-/raw/${gitConfig.branch}/docs/${encodeURI(page.path)}`}
           />
         </div>
         <DocsBody>
@@ -111,7 +111,7 @@ export async function generateMetadata(
     title: page.data.title,
     description: page.data.description,
     openGraph: {
-      images: getPageImage(page).url,
+      images: getPageImageUrl(page).url,
       url: page.url,
     },
   })
