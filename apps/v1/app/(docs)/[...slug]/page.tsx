@@ -80,7 +80,7 @@ export default async function Page(props: PageProps<'/[...slug]'>) {
           <MarkdownCopyButton markdownUrl={markdownUrl} />
           <ViewOptionsPopover
             markdownUrl={markdownUrl}
-            githubUrl={`https://gitlab.com/${gitConfig.user}/${gitConfig.repo}/-/raw/${gitConfig.branch}/apps/v2/content/${encodeURI(page.path)}`}
+            githubUrl={`https://gitlab.com/${gitConfig.user}/${gitConfig.repo}/-/${gitConfig.branch}/apps/v2/content/${encodeURI(page.path)}`}
           />
         </div>
         <DocsBody>
