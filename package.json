@@ -24,14 +24,14 @@
   },
   "devDependencies": {
     "fumadocs-core": "catalog:fumadocs",
-    "oxfmt": "^0.79.0",
-    "oxlint": "^1.94.0",
-    "turbo": "^2.11.11"
+    "oxfmt": "^0.80.0",
+    "oxlint": "^1.95.0",
+    "turbo": "^2.11.13"
   },
   "devEngines": {
     "packageManager": {
       "name": "bun",
-      "version": "1.4.4",
+      "version": "1.4.5",
       "onFail": "download"
     }
   },
@@ -47,12 +47,12 @@
     },
     "dev": {
       "@types/mdx": "^2.0.14",
-      "@types/node": "^26.6.6",
+      "@types/node": "^26.6.7",
       "tsdown": "^0.23.7",
       "typescript": "^7.0.2"
     },
     "react": {
-      "@types/react": "^19.3.0",
+      "@types/react": "^19.3.1",
       "@types/react-dom": "^19.3.0",
       "react": "^19.3.1",
       "react-dom": "^19.3.1",
@@ -63,10 +63,10 @@
       "tailwindcss": "^4.3.5"
     },
     "fumadocs": {
-      "@fumadocs/base-ui": "^16.19.4",
+      "@fumadocs/base-ui": "^16.19.7",
       "@fumadocs/mdx-remote": "^1.5.3",
-      "fumadocs-core": "^16.19.4",
-      "fumadocs-mdx": "^15.6.3"
+      "fumadocs-core": "^16.19.7",
+      "fumadocs-mdx": "^15.6.4"
     }
   }
 }
